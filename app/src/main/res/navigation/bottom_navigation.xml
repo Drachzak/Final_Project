@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/puasa">
+
+
+    <fragment
+        android:id="@+id/puasa"
+        android:name="com.dzak.puasa.fragment.FragmentPuasa"
+        android:label="fragment_puasa"
+        tools:layout="@layout/fragment_puasa" />
+
+    <fragment
+        android:id="@+id/batal"
+        android:name="com.dzak.puasa.fragment.BatalPuasaFragment"
+        android:label="fragment_batal_puasa"
+        tools:layout="@layout/fragment_batal_puasa" />
+
+    <fragment
+        android:id="@+id/dalil"
+        android:name="com.dzak.puasa.fragment.DalilPuasaFragment"
+        android:label="fragment_dalil_puasa"
+        tools:layout="@layout/fragment_dalil_puasa" />
+</navigation>
